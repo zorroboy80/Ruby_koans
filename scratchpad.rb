@@ -9,11 +9,17 @@ class Foo
 	end
 end
 
+    array = [1,2]
+    array.push(:last)
 
-    array = [:peanut, :butter, :and, :jelly]
-
-   # puts array[0..2]
-   # puts array[0...2]
-    puts array[2..-1]
+	puts array
 	
-	(1..3).each { |x| puts(x) }
+	
+	
+=begin
+    assert_equal __, array
+
+    popped_value = array.pop
+    assert_equal __, popped_value
+    assert_equal __, array
+=end
