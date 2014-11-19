@@ -18,4 +18,6 @@ g = Foo.new
 puts g.object_id
 
 h = Foo.new
-puts 3.object_id
+i = h.clone
+puts h.object_id
+puts i.object_id
