@@ -18,4 +18,4 @@ g = Foo.new
 puts g.object_id
 
 h = Foo.new
-puts h.object_id
+puts 3.object_id
