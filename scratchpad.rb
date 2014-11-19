@@ -9,22 +9,12 @@ class Foo
 	end
 end
 
-    array = [1,2]
-    array.unshift(:first)
 
-	puts array
-	
-	puts array.shift
-	
+	names = ["John", "Smith"]
+    puts names
 	
 	
 =begin
-    array = [1,2]
-    array.unshift(:first)
-
-    assert_equal __, array
-
-    shifted_value = array.shift
-    assert_equal __, shifted_value
-    assert_equal __, array
+    names = ["John", "Smith"]
+    assert_equal __, names
 =end
