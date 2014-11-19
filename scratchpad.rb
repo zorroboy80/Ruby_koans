@@ -10,13 +10,7 @@ class Foo
 end
 
 
-    array = Array.new
+    array = [:peanut, :butter, :and, :jelly]
 
-    array[0] = 1
 
-    array[1] = 2
-
-    array << 333
-	array << 33.45
-
-	puts array[3]
+	puts array
