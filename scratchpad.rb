@@ -10,14 +10,13 @@ class Foo
 end
 
 
-f = Foo.new
-puts f.printme("moo")
-puts f.object_id
+    array = Array.new
 
-g = Foo.new
-puts g.object_id
+    array[0] = 1
 
-h = Foo.new
-i = h.clone
-puts h.object_id
-puts i.object_id
+    array[1] = 2
+
+    array << 333
+	array << 33.45
+
+	puts array[3]
