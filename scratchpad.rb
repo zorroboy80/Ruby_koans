@@ -9,19 +9,17 @@ class Foo
 	end
 end
 
-
-    first_name = "Roy"
-    last_name = "Rob"
-    first_name, last_name = last_name, first_name
-	puts "First: " + first_name
-	puts "Last: " + last_name
+    hash = { :one => "uno", :two => "dos" }
+    hash[:one] = "eins"
+	
+	puts hash
 
 	
 	
 =begin
-    first_name = "Roy"
-    last_name = "Rob"
-    first_name, last_name = last_name, first_name
-    assert_equal __, first_name
-    assert_equal __, last_name
+    hash = { :one => "uno", :two => "dos" }
+    hash[:one] = "eins"
+
+    expected = { :one => __, :two => "dos" }
+    assert_equal __, hash
 =end
