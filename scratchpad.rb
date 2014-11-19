@@ -12,5 +12,8 @@ end
 
     array = [:peanut, :butter, :and, :jelly]
 
-
-	puts array
+   # puts array[0..2]
+   # puts array[0...2]
+    puts array[2..-1]
+	
+	(1..3).each { |x| puts(x) }
