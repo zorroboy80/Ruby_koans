@@ -10,11 +10,18 @@ class Foo
 end
 
 
-	names = ["John", "Smith"]
-    puts names
+    first_name = "Roy"
+    last_name = "Rob"
+    first_name, last_name = last_name, first_name
+	puts "First: " + first_name
+	puts "Last: " + last_name
+
 	
 	
 =begin
-    names = ["John", "Smith"]
-    assert_equal __, names
+    first_name = "Roy"
+    last_name = "Rob"
+    first_name, last_name = last_name, first_name
+    assert_equal __, first_name
+    assert_equal __, last_name
 =end
