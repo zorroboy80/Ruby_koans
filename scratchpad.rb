@@ -9,17 +9,19 @@ class Foo
 	end
 end
 
-    hash = { :one => "uno", :two => "dos" }
-    hash[:one] = "eins"
+    hash = { "jim" => 53, "amy" => 20, "dan" => 23 }
+    new_hash = hash.merge({ "jim" => 54, "jenny" => 26 })
 	
-	puts hash
+	puts new_hash
 
 	
 	
 =begin
-    hash = { :one => "uno", :two => "dos" }
-    hash[:one] = "eins"
+    hash = { "jim" => 53, "amy" => 20, "dan" => 23 }
+    new_hash = hash.merge({ "jim" => 54, "jenny" => 26 })
 
-    expected = { :one => __, :two => "dos" }
-    assert_equal __, hash
+    assert_equal true, hash != new_hash
+
+    expected = { "jim" => 54, "amy" => 20, "dan" => 23, "jenny" => 26 }
+    assert_equal __, expected == new_hash
 =end
