@@ -10,11 +10,7 @@ class Foo
 end
 
 
-def test_objects_can_be_inspected
-	assert_equal __, 123.inspect
-	assert_equal __, nil.inspect
-end
-
 f = Foo.new
 print f.printme("moo")
-print f.inspect
+print f.object_id.class
+
